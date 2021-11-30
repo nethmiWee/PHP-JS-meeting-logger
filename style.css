@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+
+.glass .dashboard #user {
+	font-size: large;
+	
+}
+
+h1{
+	color: #426696;
+	font-weight: 600;
+	font-size: 3rem;
+	opacity: 0.8;
+}
+
+h2, p{
+	color: #658ec6;
+	font-weight: 500;
+	opacity: 0.8;
+}
+
+main{
+font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+	display: flex;
+    align-items: center;             /*Vertical alignment*/
+	justify-content: center;         /*Horizontal alignment*/
+}
+
+.glass{
+	min-height: 80vh;
+	width: 60%;
+	background: #FFFFFF;
+	background: linear-gradient(to right bottom, rgba(255,255,255, 0.7), rgba(255,255,255, 0.3));
+	/* 70% on left & 30% on right opacity*/
+	border-radius: 2rem;
+	z-index: 2;
+	backdrop-filter: blur(6rem);
+	display: flex;
+	
+}
+
+.circle1, .circle2{
+	height: 15rem;
+	weight: 15rem;
+	background: #FFFFFF;
+	background: linear-gradient(to right bottom, rgba(255,255,255, 0.7), rgba(255,255,255, 0.1));
+	/* 100% on left & 50% on right opacity*/
+	
+	position: absolute;
+	border-radius: 50%;
+	min-width: 15rem;
+	/* [disabled]min-height: 5rem; */
+	/* [disabled]width: 4rem; */
+}
+
+.circle1{
+	top:5%;
+	right: 15%;
+}
+
+.circle2{
+	bottom:5%;
+	left: 15%;
+}
+h2 {
+	font-size: small;
+}
+
+
+.dashboard{
+	flex: 1;
+	background: linear-gradient(to right bottom, rgba(255,255,255, 0.7), rgba(255,255,255, 0.3));
+	border-radius: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+
+.Home{
+	flex: 2;
+}
+
+
+.link{
+	display: flex;
+	margin: 1rem 0rem;
+	align-items: center;
+	
+}
+
+
+.link h2{
+	padding:0rem 1rem;
+}
+
+
+
+.pro{
+	background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+	border-radius: 2rem;
+	color: white;
+	padding: 1rem;
+	position: relative;
+	
+}
+
+.pro img{
+	position: absolute;
+	
+	top:10%;
+	right:10%;
+	
+	
+}
+
+.pro h2{
+	width: 40%;
+	color: white;
+	font-weight: 600;
+}
+
+/*Progress section*/
+
+
+.status input{
+	background: linear-gradient(to right bottom, rgba(255,255,255, 0.7), rgba(255,255,255, 0.3));
+	border: none;
+	width: 60%;
+	border-radius: 2rem;
+	
+}
+
+.cards input{
+	background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+	border: none;
+	height: 10px;
+	
+}
+
+.card-info-brainstorming input{
+	width: 60%; /*Percentage*/	
+}
+
+.card-info-documenting input{
+	width: 80%; /*Percentage*/	
+}
+
+.card-info-building input{
+	width: 40%; /*Percentage*/	
+}
+
+.percentage{
+	display: inline;
+}
+
+
+.card{
+	display: flex;
+	background: linear-gradient(to right bottom, rgba(255,255,255, 0.7), rgba(255,255,255, 0.3));
+	box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.1);
+	margin: 2rem 0rem;
+	padding: 1rem 0rem;
+	
+}
+
+.card:hover{
+	background: linear-gradient(to right bottom, rgba(255,255,255, 0.9), rgba(255,255,255, 0.5));
+	cursor: pointer;
+}
+
+.Home{
+	 margin: 2rem;
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+/* Time Log*/
+/*Page trans*/
+
+a:link {
+  text-decoration: none;
+  color: #658ec6;
+}
+
+a:hover {
+  font-size: large;
+  color: #426696;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #426696;
+}
+
+.content-table, .content-table-meeting {
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 0.7rem;
+	min-width: 400px;
+	overflow-y: auto; /* Scroll*/
+}
+
+.content-table thead{
+	background: linear-gradient(to right bottom, rgba(255,255,255, 0.5), rgba(255,255,255, 0.2));
+	color: #426696;
+	font-weight: bold;
+}
+
+.content-table th, .content-table td, .content-table-meeting th, .content-table-meeting td{
+	padding: 10px 15px;
+	
+}
+
+.content-table td{
+color: #658ec6;
+}
+
+.content-table tbody tr:last-of-type{
+	border-bottom: 2px solid rgba(255,255,255, 0.3);
+}
+
+
+/*Meeting*/
+.content-table-meeting thead{
+	background: linear-gradient(to right bottom, rgba(113, 204, 222, 0.5), rgba(66, 144, 150, 0.3));
+	color: #426696;
+	font-weight: bold;
+}
+
+.content-table-meeting td{
+color: #658ec6;
+}
+
+.content-table-meeting tbody tr:last-of-type{
+	border-bottom: 2px solid rgba(66, 144, 150, 0.3);
+}
+
+/*Add button*/
+ .update, .add, .delete {
+	width: 30%;
+	color: #426696;
+	border: thin;
+	padding: 6px;
+	background: linear-gradient(to right bottom, rgba(255,255,255, 0.3), rgba(255,255,255, 0.6));
+	border-radius: 2rem;
+}
+
+.add:hover, .update:hover, .delete:hover{
+	background: linear-gradient(to right bottom, rgba(255,255,255, 0.9), rgba(255,255,255, 0.5));
+	cursor: pointer;
+}
+
+.buttons {
+	 display: flex;
+  justify-content: space-around;
+}
+
+.loginPopup {
+        position: relative;
+        text-align: center;
+        width: 100%;
+      }
+      .formPopup {
+        display: none;
+        position: fixed;
+        left: 45%;
+        top: 5%;
+        transform: translate(-50%, 5%);
+        border: 3px solid #658ec6;
+        z-index: 9;
+      }
+      .formContainer {
+        max-width: 300px;
+        padding: 20px;
+        background-color: #F3F5FB;
+      }
+      .formContainer input[type=text],
+      .formContainer input[type=text],
+      .formContainer input[type=text],
+      .formContainer input[type=text]{
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: #DCE3EB;
+      }
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=text]:focus
+{
+        background-color: #ddd;
+        outline: none;
+      }
+      .formContainer .btn {
+        padding: 12px 20px;
+        border: none;
+        background-color: #8ebf42;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 0.8;
+      }
+      .formContainer .cancel {
+        background-color: #cc0000;
+      }
+
+      .formContainer .btn:hover
+       {
+        opacity: 1;
+      }
